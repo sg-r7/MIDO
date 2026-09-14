@@ -1,0 +1,136 @@
+Enter<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تطبيق MODI | التفاصيل والتحميل</title>
+  <style>
+    :root {
+      --bg-color: #f7f9fb;
+      --card-bg: #ffffff;
+      --primary-color: #3b6978;
+      --accent-color: #204051;
+      --text-main: #2d3748;
+      --text-muted: #718096;
+      --border-color: #e2e8f0;
+      --btn-hover: #2e525e;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.8;
+    }
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .back-link {
+      display: inline-block;
+      color: #e4eef2;
+      text-decoration: none;
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 25px auto;
+      padding: 0 15px;
+    }
+    .details-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .app-icon {
+      width: 105px;
+      height: 105px;
+      border-radius: 22px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      margin-bottom: 12px;
+      object-fit: cover;
+    }
+    .meta-info {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .content-section {
+      text-align: right;
+      border-top: 1px solid var(--border-color);
+      padding-top: 18px;
+    }
+    .features-list {
+      padding-right: 20px;
+      margin: 10px 0;
+    }
+    .download-btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: #ffffff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05rem;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+      transition: background-color 0.2s;
+    }
+    .download-btn:hover {
+      background-color: var(--btn-hover);
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="back-link">→ العودة للرئيسية</a>
+    <h1 style="margin:0; font-size: 1.6rem;">تفاصيل التطبيق</h1>
+  </header>
+
+  <main class="container">
+    <div class="details-card">
+      <img src="icon.png" alt="أيقونة MODI" class="app-icon">
+      <h2 style="margin: 0 0 6px 0; color: var(--accent-color);">تطبيق MODI</h2>
+      <div class="meta-info">الإصدار: v1.0.13 | الحجم: ~51 ميجابايت</div>
+
+      <div class="content-section">
+        <p>
+          وداعاً للورقة والقلم! تطبيق <strong>MODI</strong> هو حاسبة ومسجل رقمي مخصص لاحتساب نقاط ألعاب الورق (الشدة / الورق الواقعية كألعاب جواكر) بالإضافة إلى تسجيل نقاط جولات <strong>الدومينو</strong> بكل دقة وسهولة.
+        </p>
+
+        <strong style="color: var(--accent-color);">أهم المميزات:</strong>
+        <ul class="features-list">
+          <li><strong>تسجيل ذكي وسريع:</strong> حساب النقاط والمجاميع تلقائياً دون الحاجة للجمع اليدوي.</li>
+          <li><strong>متعدد الألعاب:</strong> يدعم ألعاب الورق الشعبية وجولات الدومينو.</li>
+          <li><strong>واجهة واضحة:</strong> جدول مبسط يوضح نتائج كل لاعب أو فريق في الجلسة الواقعية.</li>
+          <li><strong>خفيف وعملي:</strong> استجابة سريعة أثناء جلسات اللعب مع الأصدقاء.</li>
+        </ul>
+      </div>
+
+      <a href="https://github.com/sg-r7/MIDO/releases/download/v1.0.13/MODI_1.0.13.apk" class="download-btn">
+        ⬇️ تحميل ملف التطبيق (APK)
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© جميع الحقوق محفوظة لـ MIDO</p>
+  </footer>
+
+</body>
+</html>
