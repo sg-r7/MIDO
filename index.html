@@ -13,9 +13,7 @@
       --text-main: #2d3748;
       --text-muted: #718096;
       --border-color: #e2e8f0;
-      --btn-hover: #2e525e;
     }
-
     body {
       margin: 0;
       padding: 0;
@@ -24,69 +22,70 @@
       color: var(--text-main);
       line-height: 1.7;
     }
-
     header {
       background-color: var(--primary-color);
       color: white;
       text-align: center;
       padding: 35px 20px;
     }
-
     header h1 {
       margin: 0;
       font-size: 1.8rem;
     }
-
     header p {
       margin: 8px 0 0;
       color: #e4eef2;
       font-size: 1rem;
     }
-
     .container {
       max-width: 650px;
       margin: 25px auto;
       padding: 0 15px;
     }
-
+    .app-link-card {
+      display: block;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 24px;
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      margin-bottom: 20px;
+    }
+    .app-link-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    }
+    .app-icon {
+      width: 95px;
+      height: 95px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 12px;
+      object-fit: cover;
+    }
+    .app-title {
+      margin: 0;
+      color: var(--accent-color);
+      font-size: 1.35rem;
+    }
+    .click-hint {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: var(--primary-color);
+      font-weight: bold;
+    }
     .post-card {
       background: var(--card-bg);
       border: 1px solid var(--border-color);
       border-radius: 12px;
-      padding: 24px;
+      padding: 20px;
       margin-bottom: 20px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
     }
-
-    .post-title {
-      margin-top: 0;
-      margin-bottom: 8px;
-      color: var(--accent-color);
-      font-size: 1.3rem;
-    }
-
-    .post-date {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      margin-bottom: 14px;
-    }
-
-    .post-content {
-      font-size: 1rem;
-      color: var(--text-main);
-    }
-
-    .download-btn {
-      display: inline-block;
-      background-color: var(--primary-color);
-      color: #ffffff;
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 14px;
-    }
-
     footer {
       text-align: center;
       padding: 20px;
@@ -104,25 +103,18 @@
 
   <main class="container">
 
-    <!-- بطاقة تطبيق MODI مع رابط التحميل المباشر -->
-    <article class="post-card" style="text-align: center;">
-      <h2 class="post-title">📱 تطبيق MODI للأندرويد</h2>
-      <div class="post-date">الإصدار: v1.0.13 | الحجم: ~51 ميجابايت</div>
-      <div class="post-content">
-        <p>يمكنك الآن تنزيل أحدث إصدار من تطبيقي بصيغة APK مباشرة وتثبيته على هاتفك.</p>
-        <a href="https://github.com/sg-r7/MIDO/releases/download/v1.0.13/MODI_1.0.13.apk" class="download-btn">
-          ⬇️ تحميل التطبيق (APK)
-        </a>
-      </div>
-    </article>
+    <!-- بطاقة التطبيق القابلة للنقر -->
+    <a href="modi.html" class="app-link-card">
+      <img src="icon.png" alt="أيقونة تطبيق MODI" class="app-icon">
+      <h2 class="app-title">📱 تطبيق MODI</h2>
+      <p style="margin: 6px 0 0 0; color: var(--text-muted); font-size: 0.95rem;">مسجل وحاسبة نقاط الشدة والدومينو</p>
+      <div class="click-hint">اضغط هنا لمعرفة التفاصيل وتحميل التطبيق ←</div>
+    </a>
 
     <!-- بطاقة منشور عادي -->
     <article class="post-card">
-      <h2 class="post-title">منشور جديد</h2>
-      <div class="post-date">تاريخ النشر: اليوم</div>
-      <div class="post-content">
-        <p>أهلاً بكم في موقعي على GitHub! تم تصميم الواجهة بألوان هادئة ومريحة وتصميم متناسق مع شاشات الهواتف.</p>
-      </div>
+      <h3 style="margin-top:0; color: var(--accent-color);">منشور جديد</h3>
+      <p style="margin-bottom:0; color: var(--text-main);">أهلاً بكم في موقعي! تم تصميم الواجهة لتكون سريعة وسهلة التصفح من الهاتف.</p>
     </article>
 
   </main>
@@ -133,3 +125,4 @@
 
 </body>
 </html>
+
