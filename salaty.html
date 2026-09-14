@@ -5,11 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>تحميل تطبيق صلاتي | SALATY</title>
   <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #0b132b 0%, #1c2541 100%);
+      --card-bg: rgba(28, 37, 65, 0.85);
+      --accent: #6fffe9;
+      --btn-grad: linear-gradient(135deg, #00b4d8, #0077b6);
+      --text-muted: #94a3b8;
+    }
     body {
       margin: 0;
       padding: 20px;
-      font-family: system-ui, -apple-system, sans-serif;
-      background-color: #0b132b;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg-gradient);
       color: #ffffff;
       display: flex;
       justify-content: center;
@@ -18,73 +25,144 @@
       box-sizing: border-box;
     }
     .card {
-      background-color: #1c2541;
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
       border: 1px solid #3a506b;
-      border-radius: 18px;
-      padding: 28px;
-      max-width: 420px;
+      border-radius: 24px;
+      padding: 32px 24px;
+      max-width: 440px;
       width: 100%;
       text-align: center;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      box-shadow: 0 16px 36px rgba(0,0,0,0.5);
     }
-    .icon {
-      font-size: 56px;
-      margin-bottom: 10px;
+    .icon-wrapper {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 16px;
+      background: #162038;
+      border: 1px solid #3a506b;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
     }
     h1 {
-      color: #6fffe9;
-      font-size: 22px;
+      color: var(--accent);
+      font-size: 24px;
       margin: 0 0 6px 0;
+      font-weight: 700;
     }
-    .version {
-      color: #a0aec0;
+    .tagline {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+    .meta-item {
+      background: #162038;
+      padding: 10px 6px;
+      border-radius: 12px;
+      border: 1px solid #2b3952;
+    }
+    .meta-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .meta-value {
       font-size: 13px;
-      margin-bottom: 18px;
+      font-weight: bold;
+      color: #e2e8f0;
     }
     .features {
       text-align: right;
       background: #162038;
-      padding: 15px;
-      border-radius: 12px;
-      margin-bottom: 22px;
-      font-size: 14px;
-      line-height: 1.8;
-      color: #cbd5e0;
+      padding: 18px;
+      border-radius: 16px;
+      border: 1px solid #2b3952;
+      margin-bottom: 26px;
+      font-size: 13.5px;
+      line-height: 1.9;
+      color: #cbd5e1;
+    }
+    .features-title {
+      font-weight: bold;
+      color: var(--accent);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
     .btn-download {
       display: block;
-      background: linear-gradient(135deg, #00b4d8, #0077b6);
+      background: var(--btn-grad);
       color: #ffffff;
       text-decoration: none;
-      padding: 14px;
-      border-radius: 12px;
+      padding: 16px;
+      border-radius: 14px;
       font-weight: bold;
       font-size: 16px;
+      box-shadow: 0 6px 18px rgba(0, 180, 216, 0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .btn-download:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 180, 216, 0.45);
+    }
+    .btn-download:active {
+      transform: translateY(0);
     }
     .btn-back {
       display: inline-block;
-      margin-top: 16px;
-      color: #a0aec0;
+      margin-top: 18px;
+      color: var(--text-muted);
       text-decoration: none;
       font-size: 13px;
+      transition: color 0.15s ease;
+    }
+    .btn-back:hover {
+      color: #ffffff;
     }
   </style>
 </head>
 <body>
 
   <div class="card">
-    <div class="icon">🕌</div>
+    <div class="icon-wrapper">🕌</div>
     <h1>صلاتي | SALATY</h1>
-    <div class="version">الإصدار v1.0.5 • نظام أندرويد (APK)</div>
+    <div class="tagline">رفيقك اليومي للصلوات والأذكار واتجاه القبلة</div>
 
-    <div class="features">
-      • حساب أوقات الصلاة بدقة حسب موقعك الجغرافي.<br>
-      • تنبيهات وإشعارات مجدولة لدخول أوقات الصلاة.<br>
-      • بوصلة تفاعلية لتحديد اتجاه القبلة بدقة.<br>
-      • مسبحة وأذكار إلكترونية مع اهتزاز لمسي.
+    <div class="meta-grid">
+      <div class="meta-item">
+        <div class="meta-label">الإصدار</div>
+        <div class="meta-value">v1.0.5</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">النظام</div>
+        <div class="meta-value">Android (APK)</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">الحجم</div>
+        <div class="meta-value">~90 MB</div>
+      </div>
     </div>
 
-    <a href="https://github.com/sg-r7/MIDO/releases/download/v1.0.5/____SALATY_1.0.5.apk" class="btn-download">⬇ تحميل التطبيق (APK)</a>
+    <div class="features">
+      <div class="features-title">✨ مميزات التطبيق:</div>
+      ✔ مواقيت دقيقة محسوبة جغرافياً حسب موقعك الحالي.<br>
+      ✔ تنبيهات وإشعارات فورية عند دخول وقت كل صلاة.<br>
+      ✔ بوصلة حساسة وتفاعلية لتحديد اتجاه القبلة بسهولة.<br>
+      ✔ مسبحة وأذكار رقمية مزودة باهتزاز لمسي للتسبيح السلس.
+    </div>
+
+    <a href="https://github.com/sg-r7/MIDO/releases/download/v1.0.5/____SALATY_1.0.5.apk" class="btn-download">⬇ تحميل التطبيق الآن (APK)</a>
     <a href="index.html" class="btn-back">← العودة للرئيسية</a>
   </div>
 
