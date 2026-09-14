@@ -13,6 +13,7 @@
       --text-main: #2d3748;
       --text-muted: #718096;
       --border-color: #e2e8f0;
+      --btn-hover: #2e525e;
     }
 
     body {
@@ -52,7 +53,7 @@
       background: var(--card-bg);
       border: 1px solid var(--border-color);
       border-radius: 12px;
-      padding: 20px;
+      padding: 24px;
       margin-bottom: 20px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
     }
@@ -65,14 +66,25 @@
     }
 
     .post-date {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       color: var(--text-muted);
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
 
     .post-content {
       font-size: 1rem;
       color: var(--text-main);
+    }
+
+    .download-btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 14px;
     }
 
     footer {
@@ -87,16 +99,29 @@
 
   <header>
     <h1>مرحباً بك في موقعي</h1>
-    <p>مساحتي الخاصة لمشاركة الأفكار والمنشورات</p>
+    <p>مساحتي الخاصة لمشاركة التطبيقات والمنشورات</p>
   </header>
 
   <main class="container">
 
+    <!-- بطاقة تطبيق MODI مع رابط التحميل المباشر -->
+    <article class="post-card" style="text-align: center;">
+      <h2 class="post-title">📱 تطبيق MODI للأندرويد</h2>
+      <div class="post-date">الإصدار: v1.0.13 | الحجم: ~51 ميجابايت</div>
+      <div class="post-content">
+        <p>يمكنك الآن تنزيل أحدث إصدار من تطبيقي بصيغة APK مباشرة وتثبيته على هاتفك.</p>
+        <a href="https://github.com/sg-r7/MIDO/releases/download/v1.0.13/MODI_1.0.13.apk" class="download-btn">
+          ⬇️ تحميل التطبيق (APK)
+        </a>
+      </div>
+    </article>
+
+    <!-- بطاقة منشور عادي -->
     <article class="post-card">
       <h2 class="post-title">منشور جديد</h2>
       <div class="post-date">تاريخ النشر: اليوم</div>
       <div class="post-content">
-        <p>أهلاً بكم في موقعي على GitHub! تم تصميم هذا الموقع بألوان هادئة ومريحة وتصميم متناسق مع شاشات الهواتف.</p>
+        <p>أهلاً بكم في موقعي على GitHub! تم تصميم الواجهة بألوان هادئة ومريحة وتصميم متناسق مع شاشات الهواتف.</p>
       </div>
     </article>
 
