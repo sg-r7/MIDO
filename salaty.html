@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
   <title>تطبيق صلاتي | SALATY</title>
   <style>
     :root {
@@ -133,7 +134,6 @@
     .features-list li:last-child {
       border-bottom: none;
     }
-    /* معرض لقطات الشاشة المتجاوب */
     .screenshots-gallery {
       display: flex;
       gap: 12px;
@@ -144,6 +144,8 @@
     }
     .screenshots-gallery img {
       flex: 0 0 170px;
+      height: 330px;
+      object-fit: cover;
       border-radius: 14px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.12);
       border: 2px solid var(--border-color);
@@ -175,14 +177,13 @@
 
   <main class="container">
 
-    <!-- البطاقة الرئيسية -->
     <div class="main-card">
-      <img src="https://github.com/user-attachments/assets/66615415-a4f7-470b-a677-36cc2fa62d07" alt="أيقونة صلاتي" class="app-icon">
+      <img src="https://github.com/user-attachments/assets/7e131216-de3d-4f7d-b862-7761230f4bea" alt="أيقونة صلاتي" class="app-icon" referrerpolicy="no-referrer">
       <h2 style="margin: 0 0 6px; color: var(--accent-color);">صلاتي | SALATY</h2>
       <div class="badge">الإصدار 1.0.7 (الأحدث)</div>
       
       <p style="color: var(--text-muted); margin: 0; font-size: 0.95rem;">
-        رفيقك اليومي للصلوات، القرآن الكريم كاملاً بالأصوات، والأذكار بتصميم عصري.
+        رفيقك اليومي للصلوات، القرآن الكريم كاملاً، وتكبيرات الحرم المكي الشريف.
       </p>
 
       <div class="stats-row">
@@ -200,39 +201,37 @@
         </div>
       </div>
 
-      <a href="https://github.com/sg-r7/Salaty-App/releases/download/v1.0.7/salaty.apk" class="download-btn">
+      <a href="https://github.com/sg-r7/MIDO/releases/download/v1.0.7/salaty.apk" class="download-btn">
         <span>⬇️</span>
         <span>تحميل التطبيق الآن (APK)</span>
       </a>
     </div>
 
-    <!-- معرض صور لقطات الشاشة من التطبيق -->
+    <!-- لقطات الشاشة الحقيقية من الإصدار -->
     <div class="section-card">
       <h3 class="section-title">📱 لقطات شاشة من داخل التطبيق:</h3>
       <div class="screenshots-gallery">
-        <img src="https://github.com/user-attachments/assets/3a252850-0f95-4efe-b68e-6d41eeababda" alt="الواجهة الرئيسية ومواقيت الصلاة">
-        <img src="https://github.com/user-attachments/assets/f1bfb7ce-db5f-4efc-8fc4-fb99d63c58f0" alt="قائمة مواقيت الصلاة والأذان">
-        <img src="https://github.com/user-attachments/assets/9245ab0a-de1a-4515-bc94-9359ab5708de" alt="سور القرآن الكريم والمشغل الصوتي">
-        <img src="https://github.com/user-attachments/assets/b253fe23-9b91-434e-a3bc-21160fe2473c" alt="الأذكار والورد اليومي">
+        <img src="https://github.com/user-attachments/assets/53a7be80-ab9c-40fe-9e17-ab5eeb394d33" alt="الواجهة ومواقيت الصلاة" referrerpolicy="no-referrer">
+        <img src="https://github.com/user-attachments/assets/7586189c-b5fa-43f8-b12c-585206ca9c55" alt="جدول المواقيت" referrerpolicy="no-referrer">
+        <img src="https://github.com/user-attachments/assets/4e77220e-4ceb-4659-ba0d-33002b78f11a" alt="المشغل القرآني" referrerpolicy="no-referrer">
+        <img src="https://github.com/user-attachments/assets/0727648e-8fc0-4c9a-a853-9a3db6f1800f" alt="الأذكار والتسابيح" referrerpolicy="no-referrer">
       </div>
       <p style="margin: 8px 0 0; font-size: 0.8rem; color: var(--text-muted); text-align: center;">(اسحب لليمين واليسار لمشاهدة بقية الواجهات)</p>
     </div>
 
-    <!-- قائمة المميزات -->
     <div class="section-card">
-      <h3 class="section-title">✨ أبرز مميزات التحديث:</h3>
+      <h3 class="section-title">✨ مميزات التحديث:</h3>
       <ul class="features-list">
-        <li>📍 <b>مواقيت دقيقة ديناميكية:</b> حساب فلكي تلقائي لموقعك مع إمكانية تحديد المدينة يدوياً.</li>
-        <li>🎧 <b>مشغل القرآن الصوتي:</b> استماع للتلاوات بأصوات المشايخ (اللحيدان، الدوسري، وعبدالباسط).</li>
-        <li>🕋 <b>أذان مكة المكرمة:</b> دعم تكبيرات الأذان مع ضبط منبهات الصلاة الدقيقة.</li>
-        <li>🔄 <b>تحديثات تلقائية:</b> فحص التحديثات الجديدة وتنزيلها مباشرة من داخل التطبيق.</li>
-        <li>📖 <b>المصحف والأذكار:</b> تصفح القرآن بالرسم العثماني وحصن المسلم والسبحة الإلكترونية.</li>
+        <li>📍 <b>مواقيت دقيقة:</b> حساب فلكي تلقائي للموقع الجغرافي.</li>
+        <li>🎧 <b>تلاوات صوتية:</b> استماع للقرآن بأصوات نخبة من المشايخ.</li>
+        <li>🕋 <b>أذان مكة المكرمة:</b> تكبيرات أذان الحرم المكي مع التنبيهات الدقيقة.</li>
+        <li>🔄 <b>تحديثات تلقائية:</b> فحص التحديثات وتنزيلها من داخل التطبيق.</li>
+        <li>📖 <b>المصحف والأذكار:</b> تصفح القرآن بالرسم العثماني، حصن المسلم، والسبحة.</li>
       </ul>
     </div>
 
-    <!-- تنبيه التثبيت -->
     <div class="note-card">
-      <b>💡 تنبيه التثبيت:</b> عند تثبيت ملف الـ APK، اختر <b>"تثبيت على أي حال"</b> ثم امنح الإذن للتثبيت من المتصفح ليكتمل التثبيت بنجاح.
+      <b>💡 تنبيه التثبيت:</b> عند تنزيل ملف الـ APK، اضغط على <b>"تثبيت على أي حال"</b> ثم امنح إذن التثبيت من المتصفح.
     </div>
 
   </main>
