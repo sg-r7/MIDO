@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تطبيق صلاتي | SALATY</title>
+  <style>
+    :root {
+      --bg-color: #f7f9fb;
+      --card-bg: #ffffff;
+      --primary-color: #3b6978;
+      --accent-color: #204051;
+      --text-main: #2d3748;
+      --text-muted: #718096;
+      --border-color: #e2e8f0;
+      --btn-bg: #071739;
+      --btn-text: #72efdd;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+    }
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: #e4eef2;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 650px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    .main-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+    }
+    .app-icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 22px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      margin-bottom: 12px;
+      object-fit: cover;
+    }
+    .badge {
+      display: inline-block;
+      background: #eef4f7;
+      color: var(--primary-color);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    .stats-row {
+      display: flex;
+      justify-content: space-around;
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 12px;
+      margin: 15px 0 20px;
+      border: 1px solid var(--border-color);
+    }
+    .stat-item {
+      text-align: center;
+    }
+    .stat-title {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .stat-value {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+    .download-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background-color: var(--btn-bg);
+      color: var(--btn-text);
+      padding: 14px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: 2px solid var(--btn-text);
+      box-shadow: 0 4px 14px rgba(7, 23, 57, 0.2);
+    }
+    .section-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+    .section-title {
+      margin-top: 0;
+      color: var(--accent-color);
+      font-size: 1.15rem;
+      margin-bottom: 15px;
+    }
+    .features-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .features-list li {
+      padding: 8px 0;
+      border-bottom: 1px dashed var(--border-color);
+      font-size: 0.95rem;
+    }
+    .features-list li:last-child {
+      border-bottom: none;
+    }
+    /* معرض لقطات الشاشة المتجاوب */
+    .screenshots-gallery {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .screenshots-gallery img {
+      flex: 0 0 170px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      border: 2px solid var(--border-color);
+      scroll-snap-align: start;
+    }
+    .note-card {
+      background: #fff9db;
+      border: 1px solid #ffe066;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 20px;
+      font-size: 0.88rem;
+      color: #664d03;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="back-btn">→ العودة للصفحة الرئيسية</a>
+    <h1 style="margin:0; font-size: 1.5rem;">تفاصيل تطبيق صلاتي</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- البطاقة الرئيسية -->
+    <div class="main-card">
+      <img src="https://github.com/user-attachments/assets/66615415-a4f7-470b-a677-36cc2fa62d07" alt="أيقونة صلاتي" class="app-icon">
+      <h2 style="margin: 0 0 6px; color: var(--accent-color);">صلاتي | SALATY</h2>
+      <div class="badge">الإصدار 1.0.7 (الأحدث)</div>
+      
+      <p style="color: var(--text-muted); margin: 0; font-size: 0.95rem;">
+        رفيقك اليومي للصلوات، القرآن الكريم كاملاً بالأصوات، والأذكار بتصميم عصري.
+      </p>
+
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-title">الإصدار</div>
+          <div class="stat-value">v1.0.7</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-title">النظام</div>
+          <div class="stat-value">Android (APK)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-title">الحجم</div>
+          <div class="stat-value">~70 MB</div>
+        </div>
+      </div>
+
+      <a href="https://github.com/sg-r7/Salaty-App/releases/download/v1.0.7/salaty.apk" class="download-btn">
+        <span>⬇️</span>
+        <span>تحميل التطبيق الآن (APK)</span>
+      </a>
+    </div>
+
+    <!-- معرض صور لقطات الشاشة من التطبيق -->
+    <div class="section-card">
+      <h3 class="section-title">📱 لقطات شاشة من داخل التطبيق:</h3>
+      <div class="screenshots-gallery">
+        <img src="https://github.com/user-attachments/assets/3a252850-0f95-4efe-b68e-6d41eeababda" alt="الواجهة الرئيسية ومواقيت الصلاة">
+        <img src="https://github.com/user-attachments/assets/f1bfb7ce-db5f-4efc-8fc4-fb99d63c58f0" alt="قائمة مواقيت الصلاة والأذان">
+        <img src="https://github.com/user-attachments/assets/9245ab0a-de1a-4515-bc94-9359ab5708de" alt="سور القرآن الكريم والمشغل الصوتي">
+        <img src="https://github.com/user-attachments/assets/b253fe23-9b91-434e-a3bc-21160fe2473c" alt="الأذكار والورد اليومي">
+      </div>
+      <p style="margin: 8px 0 0; font-size: 0.8rem; color: var(--text-muted); text-align: center;">(اسحب لليمين واليسار لمشاهدة بقية الواجهات)</p>
+    </div>
+
+    <!-- قائمة المميزات -->
+    <div class="section-card">
+      <h3 class="section-title">✨ أبرز مميزات التحديث:</h3>
+      <ul class="features-list">
+        <li>📍 <b>مواقيت دقيقة ديناميكية:</b> حساب فلكي تلقائي لموقعك مع إمكانية تحديد المدينة يدوياً.</li>
+        <li>🎧 <b>مشغل القرآن الصوتي:</b> استماع للتلاوات بأصوات المشايخ (اللحيدان، الدوسري، وعبدالباسط).</li>
+        <li>🕋 <b>أذان مكة المكرمة:</b> دعم تكبيرات الأذان مع ضبط منبهات الصلاة الدقيقة.</li>
+        <li>🔄 <b>تحديثات تلقائية:</b> فحص التحديثات الجديدة وتنزيلها مباشرة من داخل التطبيق.</li>
+        <li>📖 <b>المصحف والأذكار:</b> تصفح القرآن بالرسم العثماني وحصن المسلم والسبحة الإلكترونية.</li>
+      </ul>
+    </div>
+
+    <!-- تنبيه التثبيت -->
+    <div class="note-card">
+      <b>💡 تنبيه التثبيت:</b> عند تثبيت ملف الـ APK، اختر <b>"تثبيت على أي حال"</b> ثم امنح الإذن للتثبيت من المتصفح ليكتمل التثبيت بنجاح.
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© جميع الحقوق محفوظة لـ MIDO</p>
+  </footer>
+
+</body>
+</html>
+
