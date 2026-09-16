@@ -3,161 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تحميل تطبيق صلاتي | SALATY</title>
+  <title>تطبيق صلاتي | SALATY</title>
   <style>
     :root {
-      --bg-gradient: linear-gradient(135deg, #0b132b 0%, #1c2541 100%);
-      --card-bg: rgba(28, 37, 65, 0.85);
-      --accent: #6fffe9;
-      --btn-grad: linear-gradient(135deg, #00b4d8, #0077b6);
-      --text-muted: #94a3b8;
+      --bg-color: #f7f9fb;
+      --card-bg: #ffffff;
+      --primary-color: #3b6978;
+      --accent-color: #204051;
+      --text-main: #2d3748;
+      --text-muted: #718096;
+      --border-color: #e2e8f0;
+      --salaty-dark: #071739;
+      --salaty-accent: #72efdd;
     }
     body {
       margin: 0;
-      padding: 20px;
+      padding: 0;
       font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-      background: var(--bg-gradient);
-      color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      box-sizing: border-box;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.7;
     }
-    .card {
-      background: var(--card-bg);
-      backdrop-filter: blur(12px);
-      border: 1px solid #3a506b;
-      border-radius: 24px;
-      padding: 32px 24px;
-      max-width: 440px;
-      width: 100%;
+    header {
+      background-color: var(--primary-color);
+      color: white;
       text-align: center;
-      box-shadow: 0 16px 36px rgba(0,0,0,0.5);
+      padding: 30px 20px;
     }
-    .icon-wrapper {
-      width: 90px;
-      height: 90px;
-      margin: 0 auto 16px;
-      background: #162038;
-      border: 1px solid #3a506b;
-      border-radius: 22px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 48px;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
-    }
-    h1 {
-      color: var(--accent);
-      font-size: 24px;
-      margin: 0 0 6px 0;
-      font-weight: 700;
-    }
-    .tagline {
-      color: var(--text-muted);
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-    .meta-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin-bottom: 22px;
-    }
-    .meta-item {
-      background: #162038;
-      padding: 10px 6px;
-      border-radius: 12px;
-      border: 1px solid #2b3952;
-    }
-    .meta-label {
-      font-size: 11px;
-      color: var(--text-muted);
-      margin-bottom: 4px;
-    }
-    .meta-value {
-      font-size: 13px;
-      font-weight: bold;
-      color: #e2e8f0;
-    }
-    .features {
-      text-align: right;
-      background: #162038;
-      padding: 18px;
-      border-radius: 16px;
-      border: 1px solid #2b3952;
-      margin-bottom: 26px;
-      font-size: 13.5px;
-      line-height: 1.9;
-      color: #cbd5e1;
-    }
-    .features-title {
-      font-weight: bold;
-      color: var(--accent);
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .btn-download {
-      display: block;
-      background: var(--btn-grad);
-      color: #ffffff;
-      text-decoration: none;
-      padding: 16px;
-      border-radius: 14px;
-      font-weight: bold;
-      font-size: 16px;
-      box-shadow: 0 6px 18px rgba(0, 180, 216, 0.35);
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-    }
-    .btn-download:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0, 180, 216, 0.45);
-    }
-    .btn-back {
+    .back-btn {
       display: inline-block;
-      margin-top: 18px;
-      color: var(--text-muted);
+      margin-bottom: 12px;
+      color: #e4eef2;
       text-decoration: none;
-      font-size: 13px;
+      font-size: 0.95rem;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 650px;
+      margin: 25px auto;
+      padding: 0 15px;
+    }
+    .main-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 26px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 25px;
+    }
+    .app-icon {
+      width: 105px;
+      height: 105px;
+      border-radius: 24px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      margin-bottom: 15px;
+    }
+    .badge {
+      display: inline-block;
+      background: #eef4f7;
+      color: var(--primary-color);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .download-btn {
+      display: block;
+      background-color: var(--salaty-dark);
+      color: var(--salaty-accent);
+      padding: 14px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 20px auto 10px;
+      border: 2px solid var(--salaty-accent);
+      box-shadow: 0 4px 14px rgba(7, 23, 57, 0.2);
+    }
+    .info-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    }
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .feature-list li {
+      padding: 8px 0;
+      border-bottom: 1px dashed var(--border-color);
+    }
+    .feature-list li:last-child {
+      border-bottom: none;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
 
-  <div class="card">
-    <div class="icon-wrapper">🕌</div>
-    <h1>صلاتي | SALATY</h1>
-    <div class="tagline">رفيقك اليومي للصلوات والأذكار واتجاه القبلة</div>
+  <header>
+    <a href="index.html" class="back-btn">→ العودة للصفحة الرئيسية</a>
+    <h1 style="margin:0; font-size: 1.6rem;">تفاصيل تطبيق صلاتي</h1>
+  </header>
 
-    <div class="meta-grid">
-      <div class="meta-item">
-        <div class="meta-label">الإصدار</div>
-        <div class="meta-value">v1.0.5</div>
-      </div>
-      <div class="meta-item">
-        <div class="meta-label">النظام</div>
-        <div class="meta-value">Android (APK)</div>
-      </div>
-      <div class="meta-item">
-        <div class="meta-label">الحجم</div>
-        <div class="meta-value">~90 MB</div>
-      </div>
+  <main class="container">
+
+    <div class="main-card">
+      <img src="https://raw.githubusercontent.com/sg-r7/Salaty-App/main/assets/icon.png" alt="أيقونة تطبيق صلاتي" class="app-icon">
+      <h2 style="margin: 0 0 6px; color: var(--accent-color);">صلاتي | SALATY</h2>
+      <div class="badge">الإصدار 1.0.7 (الأحدث)</div>
+      
+      <p style="color: var(--text-muted); margin: 0 0 15px; font-size: 0.95rem;">
+        رفيقك اليومي للعبادة: مواقيت صلاة دقيقة، تلاوات صوتية، أذان الحرم المكي، وأذكار شاملة بتصميم عصري وأداء فائق الخفة.
+      </p>
+
+      <a href="https://github.com/sg-r7/Salaty-App/releases/download/v1.0.7/salaty.apk" class="download-btn">
+        📥 تحميل التطبيق برابط مباشر (APK)
+      </a>
+      
+      <span style="font-size: 0.8rem; color: var(--text-muted);">
+        الحجم: ~70 ميغابايت · يعمل على جميع أجهزة أندرويد
+      </span>
     </div>
 
-    <div class="features">
-      <div class="features-title">✨ مميزات التطبيق:</div>
-      ✔ مواقيت دقيقة محسوبة جغرافياً حسب موقعك الحالي.<br>
-      ✔ تنبيهات وإشعارات فورية عند دخول وقت كل صلاة.<br>
-      ✔ بوصلة حساسة وتفاعلية لتحديد اتجاه القبلة بسهولة.<br>
-      ✔ مسبحة وأذكار رقمية مزودة باهتزاز لمسي للتسبيح السلس.
+    <div class="info-card">
+      <h3 style="margin-top:0; color: var(--accent-color);">🌟 أبرز مميزات التحديث (v1.0.7):</h3>
+      <ul class="feature-list">
+        <li>📍 <b>مواقيت دقيقة:</b> حساب فلكي تلقائي حسب موقعك الجغرافي أو اختيار المدينة يدوياً.</li>
+        <li>🎧 <b>تلاوات صوتية:</b> استماع للقرآن بأصوات (الشيخ محمد اللحيدان، ياسر الدوسري، عبدالباسط عبدالصمد).</li>
+        <li>🕋 <b>أذان مكة:</b> تكبيرات أذان الحرم المكي مع التنبيهات الدقيقة.</li>
+        <li>🔄 <b>تحديثات داخلية:</b> إشعارك فور توفر أي تحديث جديد وتنزيله تلقائياً.</li>
+        <li>📖 <b>المصحف والأذكار:</b> تصفح القرآن بالرسم العثماني وحصن المسلم والسبحة الإلكترونية.</li>
+      </ul>
     </div>
 
-    <a href="https://github.com/sg-r7/MIDO/releases/download/v1.0.5/SALATY.apk" class="btn-download">⬇ تحميل التطبيق الآن (APK)</a>
-    <a href="index.html" class="btn-back">← العودة للرئيسية</a>
-  </div>
+    <div class="info-card" style="background: #fff8e1; border-color: #ffe082;">
+      <h4 style="margin: 0 0 8px; color: #f57f17;">ℹ️ تعليمات التثبيت:</h4>
+      <p style="margin:0; font-size: 0.88rem; color: #5d4037;">
+        عند تثبيت التطبيق لأول مرة من المتصفح، قد تظهر رسالة أمان عادية؛ اضغط على <b>"تثبيت على أي حال / Install anyway"</b> ثم فعّل خيار السماح بالتثبيت من هذا المصدر.
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© جميع الحقوق محفوظة لـ MIDO</p>
+  </footer>
 
 </body>
 </html>
