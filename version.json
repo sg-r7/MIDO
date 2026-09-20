@@ -1,7 +1,8 @@
 {
+  "version": "1.0.10",
   "latestVersion": "1.0.10",
   "versionCode": 10,
-  "downloadUrl": "https://github.com/sg-r7/MIDO/releases/download/v1.0.10/salaty.apk",
+  "apkUrl": "https://sg-r7.github.io/MIDO/salaty.apk",
+  "downloadUrl": "https://sg-r7.github.io/MIDO/salaty.apk",
   "releaseNotes": "إصلاح ازدواج إشعارات الأذان وحفظ الصلوات المكتملة يومياً."
 }
-
