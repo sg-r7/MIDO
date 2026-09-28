@@ -1,8 +1,8 @@
 {
-  "version": "1.0.10",
-  "latestVersion": "1.0.10",
-  "versionCode": 10,
+  "version": "1.0.15",
+  "latestVersion": "1.0.15",
+  "versionCode": 15,
   "apkUrl": "https://sg-r7.github.io/MIDO/salaty.apk",
   "downloadUrl": "https://sg-r7.github.io/MIDO/salaty.apk",
-  "releaseNotes": "إصلاح ازدواج إشعارات الأذان وحفظ الصلوات المكتملة يومياً."
+  "releaseNotes": "إصلاح صوت الأذان في الخلفية، تحسين التوافق مع أجهزة شاومي وإصدارات أندرويد الحديثة، وتفعيل المنبه الدقيق."
 }
